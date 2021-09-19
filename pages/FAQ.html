@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+        <!-- Fuente general-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!-- Animacion -->
+        <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Teko:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <title>FAQ-energy</title>
+    <style>
+        .servicios{
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            justify-content: center;
+        }
+        .servCont{
+            width: 100vw;
+            display: flex;
+            justify-content: space-around ;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        /**** configuracion del cuadro principal****/
+        .boxServ{
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .b1{
+            background-image: linear-gradient(to left,rgb(255, 115, 0),rgb(248, 248, 70));
+        }
+        .b2{
+            background-image: linear-gradient(to right,rgb(255, 115, 0),rgb(247, 247, 80));
+        }
+
+        /*** Preguntas de los cuadros ***/
+        .boxServ>li{
+            display: flex;
+            padding: 12px;
+            width: 90%;
+            height: 20px;
+            margin: 3px;
+            background-image: linear-gradient(to top,rgb(71, 77, 160),rgb(74, 213, 255));
+            text-decoration: none;
+            text-align: center;
+            list-style: none;
+            transition: height 1s;
+        }
+        .boxServ>li:hover{
+            height: 250px;
+        }
+        .btnInfoServ {
+            display:flex;
+            width:70px;
+            height:28px;
+            align-self: flex-end;
+            position: relative;
+            right:2%;
+            justify-content: center ;
+            align-items: center;
+        }
+        /* Titulo Principal */
+        .tituloPri{
+            background-image: url("https://estaticos.muyinteresante.es/uploads/images/article/5fe094ed5cafe8d9059a45db/1-paneles-solares.jpg");
+            background-position-y: 40%;
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+            padding-top: 20px;
+            height: 130px;
+            font-size: 40px;
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body>
+<!--- Navegador principal --->
+<nav>
+    <ul>
+    <li><img src="../Imagenes/logo3.1.png" alt="logo" width="160px" height="75px"></li>
+    <li><a class="links" href="Home.html"> HOME</a></li>
+    <li><a class="links" href="productos.html">PRODUCTOS</a></li>
+    <li><a class="links" href="servicios.html">SERVICIOS</a></li> 
+    <li><a class="links" href="FAQ.html ">FAQ</a></li>
+    <li><a class="links" href="contacto.html">CONTACTO</a></li>
+    <li><h4 class="linksDos">info@solarenergy.com.ar </h4></li>   
+    <li><h4 class="linksDos">+54 11 7361-2091</h4></li> 
+    </ul>
+</nav>
+    <h1 class="tituloPri">FAQ <br> <span>¿Tienes alguna duda? Aca te la solucionamos</span> </h1>
+    <!--- Seccion principal --->
+    <main>
+        <section class="servicios">
+
+            <div class="servCont">
+
+                <div class="boxServ b1">
+                    <h3> SISTEMAS FOTOVOLTAICOS</h3>
+                    <hr>
+                    <li>¿CÓMO CALCULO MI CONSUMO Y LOS PANELES QUE NECESITO?</li>
+                    <li>¿LOS PANELES GENERAN SIEMPRE ENERGÍA ELÉCTRICA?</li>
+                    <li>¿TENGO QUE GENERAR TODA LA ENERGÍA ELÉCTRICA DE MI CASA?</li>
+                    <li>¿ENERGÍA FOTOVOLTAICA ES IGUAL A ENERGÍA TÉRMICA?</li>
+                    <li>¿TODOS LOS EQUIPOS TIENEN BATERÍAS?</li>
+                    <li>CUANDO HAY SOL, ¿LOS PANELES SIEMPRE GENERAN?</li>
+                    <div class="btnInfoServ"> 
+                    <a href="#">INFO</a>
+                    </div>
+                </div>
+
+                <div class="boxServ b2">
+                    <h3>SISTEMAS TERMICOS</h3>
+                    <hr>
+                    <li>¿POR QUÉ INSTALAR UN TERMOTANQUE SOLAR ENERGY?</li>
+                    <li>¿POR QUÉ MUY POCOS LO TIENEN?</li>
+                    <li>¿CUÁL ES LA MEJOR UBICACIÓN PARA UN TERMO TANQUE SOLAR?</li>
+                    <li>¿QUÉ SUCEDE EN CASO DE VIENTOS FUERTES?</li>
+                    <li>CUANDO SE HACE DE NOCHE, ¿SE CONSERVA EL AGUA CALIENTE?</li>
+                    <li>¿ES SEGURA LA INSTALACIÓN DE LOS TERMOTANQUES SOLARES?</li>
+                    <div class="btnInfoServ">
+                        <a href="#">INFO</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer align = "center">
+        <p><Buenos><a href="comercial@solarenergy.com.ar">comercial@solarenergy.com.ar</a><br>Buenos Aires, Argentina<br>Legal . Privacidad . Cookies <br>
+            <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjEgMGgtMThjLTEuNjU1IDAtMyAxLjM0NS0zIDN2MThjMCAxLjY1NCAxLjM0NSAzIDMgM2gxOGMxLjY1NCAwIDMtMS4zNDYgMy0zdi0xOGMwLTEuNjU1LTEuMzQ2LTMtMy0zeiIgZmlsbD0iIzNiNTk5OSIvPjxwYXRoIGQ9Im0xNi41IDEydi0zYzAtLjgyOC42NzItLjc1IDEuNS0uNzVoMS41di0zLjc1aC0zYy0yLjQ4NiAwLTQuNSAyLjAxNC00LjUgNC41djNoLTN2My43NWgzdjguMjVoNC41di04LjI1aDIuMjVsMS41LTMuNzV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" width="60px" height="30px"/></a> 
+            <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMi4wMDAzOCIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48bGluZWFyR3JhZGllbnQgaWQ9ImEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTY5Ljk5NDAwMTA4MzQiIHgyPSIyOTkuNDkzNDEzNTkwNCIgeTE9IjcxLjk4NjIyNzAxIiB5Mj0iMzQ5LjA1NDg0NDg4NjQiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwNzdiNSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwNjZiMiIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJiIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDY2YjIiIHN0b3Atb3BhY2l0eT0iMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA3NDg1ZSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJjIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjM2NC4yODI1MjM3ODI0IiB4Mj0iLTM3OS41ODY0MzI3MTE0IiB4bGluazpocmVmPSIjYiIgeTE9IjMxNC4wODY4MzYxMzU2IiB5Mj0iLTg0Ljk1MjE4MDgxNjYiLz48bGluZWFyR3JhZGllbnQgaWQ9ImQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjU2LjAwMDMiIHgyPSIyNTYuMDAwMyIgeGxpbms6aHJlZj0iI2IiIHkxPSI0MTUuODI2NzAxMDI4NCIgeTI9IjUyMi44MzQ0NDU4MzE4Ii8+PGxpbmVhckdyYWRpZW50IGlkPSJlIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI3MS4zNTQzODM0NjAyIiB4Mj0iNzkuOTE2ODk4ODQ5IiB4bGluazpocmVmPSIjYiIgeTE9IjI3My43NzU0NTI1Mzk4IiB5Mj0iODIuMzM4MDY4MzIwOCIvPjxsaW5lYXJHcmFkaWVudCBpZD0iZiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzODMuNzQ5NDc0ODkyMiIgeDI9Ii0xLjc1NjU3MzEwNzgiIHhsaW5rOmhyZWY9IiNiIiB5MT0iNDUxLjYzMDg3NjQxMyIgeTI9IjI3MC45MjQ5MTY0MTMiLz48bGluZWFyR3JhZGllbnQgaWQ9ImciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDc3LjUzMDU0NzM0NTYiIHgyPSIyMDguOTY5NjY2NDU4MiIgeGxpbms6aHJlZj0iI2IiIHkxPSI0OTEuMjU0MzcyNjU0NCIgeTI9IjIyMi42OTM0OTE3NjciLz48cGF0aCBkPSJtNDIwLjQyMTg3NSA1MDMuMjM0Mzc1Yy0xMDkuNTAzOTA2IDExLjY4NzUtMjE5LjMzOTg0NCAxMS42ODc1LTMyOC44NDM3NSAwLTQzLjY2NDA2My00LjY2MDE1Ni03OC4xNTIzNDQtMzkuMTQ4NDM3LTgyLjgxMjUtODIuODE2NDA2LTExLjY4NzUtMTA5LjUwMzkwNy0xMS42ODc1LTIxOS4zMzU5MzggMC0zMjguODM5ODQ0IDQuNjYwMTU2LTQzLjY2NDA2MyAzOS4xNDg0MzctNzguMTUyMzQ0IDgyLjgxMjUtODIuODEyNSAxMDkuNTAzOTA2LTExLjY4NzUgMjE5LjMzNTkzNy0xMS42ODc1IDMyOC44Mzk4NDQgMCA0My42Njc5NjkgNC42NjAxNTYgNzguMTU2MjUgMzkuMTQ4NDM3IDgyLjgxNjQwNiA4Mi44MTI1IDExLjY4NzUgMTA5LjUwMzkwNiAxMS42ODc1IDIxOS4zMzU5MzcgMCAzMjguODM5ODQ0LTQuNjYwMTU2IDQzLjY2Nzk2OS0zOS4xNDQ1MzEgNzguMTU2MjUtODIuODEyNSA4Mi44MTY0MDZ6bTAgMCIgZmlsbD0idXJsKCNhKSIvPjxwYXRoIGQ9Im00NzUuMzg2NzE5IDExMC4wOTc2NTZjLTQuMTMyODEzLTM4Ljc0NjA5NC0zNC43MzQzNzUtNjkuMzUxNTYyLTczLjQ4NDM3NS03My40ODgyODEtOTcuMTcxODc1LTEwLjM2NzE4Ny0xOTQuNjMyODEzLTEwLjM2NzE4Ny0yOTEuODA0Njg4IDAtMzguNzQ2MDk0IDQuMTM2NzE5LTY5LjM1MTU2MiAzNC43NDIxODctNzMuNDg4MjgxIDczLjQ4ODI4MS0xMC4zNjcxODcgOTcuMTcxODc1LTEwLjM2NzE4NyAxOTQuNjMyODEzIDAgMjkxLjgwMDc4MiA0LjEzNjcxOSAzOC43NSAzNC43NDIxODcgNjkuMzU1NDY4IDczLjQ4ODI4MSA3My40ODgyODEgOTcuMTcxODc1IDEwLjM3MTA5MyAxOTQuNjMyODEzIDEwLjM3MTA5MyAyOTEuODAwNzgyIDAgMzguNzUtNC4xMzI4MTMgNjkuMzU1NDY4LTM0LjczODI4MSA3My40ODgyODEtNzMuNDg4MjgxIDEwLjM3MTA5My05Ny4xNjc5NjkgMTAuMzcxMDkzLTE5NC42Mjg5MDcgMC0yOTEuODAwNzgyem0wIDAiIGZpbGw9InVybCgjYykiLz48cGF0aCBkPSJtNy42NzE4NzUgNDA5LjgwNDY4OGMuMzUxNTYzIDMuNTM5MDYyLjcxNDg0NCA3LjA3ODEyNCAxLjA5Mzc1IDEwLjYxNzE4NyA0LjY2MDE1NiA0My42NjQwNjMgMzkuMTQ4NDM3IDc4LjE1MjM0NCA4Mi44MTY0MDYgODIuODEyNSAxMDkuNTAzOTA3IDExLjY4NzUgMjE5LjMzNTkzOCAxMS42ODc1IDMyOC44Mzk4NDQgMCA0My42Njc5NjktNC42NjAxNTYgNzguMTUyMzQ0LTM5LjE0ODQzNyA4Mi44MTI1LTgyLjgxMjUuMzc4OTA2LTMuNTM5MDYzLjc0MjE4Ny03LjA3ODEyNSAxLjA5NzY1Ni0xMC42MTcxODd6bTAgMCIgZmlsbD0idXJsKCNkKSIvPjxwYXRoIGQ9Im00OTcuNzE0ODQ0IDQ0My41NzAzMTItMzMwLjQwNjI1LTMzMC40MTAxNTZjLTcuMzc4OTA2LTkuNjI4OTA2LTE4Ljk4ODI4Mi0xNS44NDM3NS0zMi4wNTQ2ODgtMTUuODQzNzUtMjIuMjg5MDYyIDAtNDAuMzU5Mzc1IDE4LjA2NjQwNi00MC4zNTkzNzUgNDAuMzU1NDY5IDAgMTMuMDcwMzEzIDYuMjE4NzUgMjQuNjc5Njg3IDE1Ljg0NzY1NyAzMi4wNTQ2ODdsMzI5LjI1NzgxMiAzMjkuMjYxNzE5YzI2LjYxMzI4MS04Ljg1NTQ2OSA0Ny44MjQyMTktMjkuMzA0Njg3IDU3LjcxNDg0NC01NS40MTc5Njl6bTAgMCIgZmlsbD0idXJsKCNlKSIvPjxwYXRoIGQ9Im0xNjkuMTUyMzQ0IDIwNC41MDM5MDZoLTY3LjgwMDc4MnYyMTAuMTc5Njg4bDk2LjIwMzEyNiA5Ni4yMDMxMjVjNzQuMzA0Njg3IDIuODEyNSAxNDguNjYwMTU2LjI2OTUzMSAyMjIuODYzMjgxLTcuNjUyMzQ0IDEyLjk3MjY1Ni0xLjM4MjgxMyAyNS4xMjUtNS40MTc5NjkgMzUuOTM3NS0xMS41MjczNDR6bTAgMCIgZmlsbD0idXJsKCNmKSIvPjxwYXRoIGQ9Im0zOTkuNDEwMTU2IDIyMi4xMDkzNzVjLTEyLjQwMjM0NC0xMy41OTc2NTYtMzAuMjU3ODEyLTIyLjEyODkwNi01MC4xMDU0NjgtMjIuMTI4OTA2LTMxLjM5NDUzMiAwLTUxLjY1NjI1IDExLjAyNzM0My02My43MTQ4NDQgMjEuMjY1NjI1bC0xMy4yODUxNTYtMTYuNzQyMTg4aC02Mi40NzI2NTd2MjEwLjE3OTY4OGw5Ni40OTIxODggOTYuNDkyMTg3YzM4LjA1NDY4Ny0xLjIzODI4MSA3Ni4wOTM3NS0zLjg4NjcxOSAxMTQuMDk3NjU2LTcuOTQxNDA2IDQzLjY2Nzk2OS00LjY2MDE1NiA3OC4xNTIzNDQtMzkuMTQ4NDM3IDgyLjgxMjUtODIuODEyNSAzLjExNzE4Ny0yOS4xOTUzMTMgNS4zOTQ1MzEtNTguNDE0MDYzIDYuODQ3NjU2LTg3LjY0MDYyNXptMCAwIiBmaWxsPSJ1cmwoI2cpIi8+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0ibTEwMS4zNTU0NjkgMjA0LjUwMzkwNmg2Ny43OTY4NzV2MjEwLjE3OTY4OGgtNjcuNzk2ODc1em0wIDAiLz48cGF0aCBkPSJtMzQ5LjMwNDY4OCAxOTkuOTgwNDY5Yy00OS42ODM1OTQgMC03MS41MDc4MTMgMjcuNjEzMjgxLTc3IDM2LjAxOTUzMXYtMzEuNDk2MDk0aC02Mi40NzI2NTd2MjEwLjE3OTY4OGg2Ny44MDA3ODF2LTEwNS41NzQyMTljMC0zMC41MDc4MTMgMTQuMDQyOTY5LTU0LjIzODI4MSA0MC42Nzk2ODgtNTQuMjM4MjgxIDI2LjYzMjgxMiAwIDMwLjk5MjE4OCAyOS41MzkwNjIgMzAuOTkyMTg4IDY1Ljg2MzI4MXY5My45NDkyMTloNjcuODAwNzgxdi0xNDYuOTAyMzQ0YzAtMzcuNDQ1MzEyLTMwLjM1NTQ2OS02Ny44MDA3ODEtNjcuODAwNzgxLTY3LjgwMDc4MXptMCAwIi8+PHBhdGggZD0ibTE3NS42MDkzNzUgMTM3LjY3NTc4MWMwIDIyLjI4OTA2My0xOC4wNjY0MDYgNDAuMzU1NDY5LTQwLjM1NTQ2OSA0MC4zNTU0NjktMjIuMjg5MDYyIDAtNDAuMzU5Mzc1LTE4LjA2NjQwNi00MC4zNTkzNzUtNDAuMzU1NDY5IDAtMjIuMjg5MDYyIDE4LjA3MDMxMy00MC4zNTkzNzUgNDAuMzU5Mzc1LTQwLjM1OTM3NSAyMi4yODkwNjMgMCA0MC4zNTU0NjkgMTguMDcwMzEzIDQwLjM1NTQ2OSA0MC4zNTkzNzV6bTAgMCIvPjwvZz48L3N2Zz4=" width="60px" height="30px" /></a>
+            <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIC0xLjk4MiAtMS44NDQgMCAtMTMyLjUyMiAtNTEuMDc3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMzcuMTA2IiB4Mj0iLTI2LjU1NSIgeTE9Ii03Mi43MDUiIHkyPSItODQuMDQ3Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1NDNlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzN2FiIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMS41IDEuNjMzYy0xLjg4NiAxLjk1OS0xLjUgNC4wNC0xLjUgMTAuMzYyIDAgNS4yNS0uOTE2IDEwLjUxMyAzLjg3OCAxMS43NTIgMS40OTcuMzg1IDE0Ljc2MS4zODUgMTYuMjU2LS4wMDIgMS45OTYtLjUxNSAzLjYyLTIuMTM0IDMuODQyLTQuOTU3LjAzMS0uMzk0LjAzMS0xMy4xODUtLjAwMS0xMy41ODctLjIzNi0zLjAwNy0yLjA4Ny00Ljc0LTQuNTI2LTUuMDkxLS41NTktLjA4MS0uNjcxLS4xMDUtMy41MzktLjExLTEwLjE3My4wMDUtMTIuNDAzLS40NDgtMTQuNDEgMS42MzN6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjxwYXRoIGQ9Im0xMS45OTggMy4xMzljLTMuNjMxIDAtNy4wNzktLjMyMy04LjM5NiAzLjA1Ny0uNTQ0IDEuMzk2LS40NjUgMy4yMDktLjQ2NSA1LjgwNSAwIDIuMjc4LS4wNzMgNC40MTkuNDY1IDUuODA0IDEuMzE0IDMuMzgyIDQuNzkgMy4wNTggOC4zOTQgMy4wNTggMy40NzcgMCA3LjA2Mi4zNjIgOC4zOTUtMy4wNTguNTQ1LTEuNDEuNDY1LTMuMTk2LjQ2NS01LjgwNCAwLTMuNDYyLjE5MS01LjY5Ny0xLjQ4OC03LjM3NS0xLjctMS43LTMuOTk5LTEuNDg3LTcuMzc0LTEuNDg3em0tLjc5NCAxLjU5N2M3LjU3NC0uMDEyIDguNTM4LS44NTQgOC4wMDYgMTAuODQzLS4xODkgNC4xMzctMy4zMzkgMy42ODMtNy4yMTEgMy42ODMtNy4wNiAwLTcuMjYzLS4yMDItNy4yNjMtNy4yNjUgMC03LjE0NS41Ni03LjI1NyA2LjQ2OC03LjI2M3ptNS41MjQgMS40NzFjLS41ODcgMC0xLjA2My40NzYtMS4wNjMgMS4wNjNzLjQ3NiAxLjA2MyAxLjA2MyAxLjA2MyAxLjA2My0uNDc2IDEuMDYzLTEuMDYzLS40NzYtMS4wNjMtMS4wNjMtMS4wNjN6bS00LjczIDEuMjQzYy0yLjUxMyAwLTQuNTUgMi4wMzgtNC41NSA0LjU1MXMyLjAzNyA0LjU1IDQuNTUgNC41NSA0LjU0OS0yLjAzNyA0LjU0OS00LjU1LTIuMDM2LTQuNTUxLTQuNTQ5LTQuNTUxem0wIDEuNTk3YzMuOTA1IDAgMy45MSA1LjkwOCAwIDUuOTA4LTMuOTA0IDAtMy45MS01LjkwOCAwLTUuOTA4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="width="60px" height="30px" /></a>
+        </p>
+    </footer>
+</body>
+</html>

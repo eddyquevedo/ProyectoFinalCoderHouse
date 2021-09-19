@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+  body {
+    background: #f17354; } }
+
+/*movil*/
+@media (max-width: 575.98px) and (orientation: portrait) {
+  body {
+    background: green; } }
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px) and (orientation: landscape) {
+  body {
+    background: blue; } }
+
+/* Reseteo de CSS */
+* {
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium; }
+
+/* footer */
+p {
+  font-size: 17px;
+  margin-top: 20px; }
+
+/* Lineas de Segmentos */
+.lineaSegmento {
+  margin: 0;
+  padding: 0;
+  height: 5px;
+  width: 100vw;
+  background-image: url("https://www.emesa-m30.es/wp-content/uploads/2020/03/linea-amarilla-discontinua.jpg");
+  background-position-y: 50%;
+  background-position-x: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+  opacity: 0.9; }
+
+.lineaSegmentos {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  font-size: 30px;
+  width: 100vw;
+  background-image: url("https://gruposolinc.com/wp-content/uploads/2018/12/Energia-solar-aprovechada-por-paneles-solares-1024x585.jpg");
+  background-position-y: 50%;
+  background-position-x: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+  opacity: 0.9; }
+
+/* Navegador principal*/
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: bold; }
+
+#navegacion ul .links {
+  color: #df0707;
+  text-decoration: none;
+  font-weight: bold; }
+
+#navegacion ul .links:hover {
+  color: #4d17df;
+  text-decoration: underline #0011ff;
+  transition: all 0.5s;
+  font-weight: bold; }
+
+#navegacion ul .linksDos {
+  text-align: right;
+  color: #1e241c; }
+
+/* Titulo quienes somos */
+.quienes {
+  z-index: 1;
+  width: 500px;
+  padding: 20px 20px;
+  line-height: 1.5;
+  border: 1px solid #ffc400;
+  background-image: url(https://media.gettyimages.com/vectors/old-yellowed-cream-beige-colored-smudged-effect-blotched-wooden-wall-vector-id1074164106?k=6&m=1074164106&s=612x612&w=0&h=q2pgVfFDkuUbJna2KVMhGryrkHEJPPvC51lHvZeBIcU=);
+  text-align: justify;
+  float: left;
+  margin-bottom: 20px; }
+
+.quienes p {
+  border: 5px dashed #db1212; }
+
+/* Video */
+h3 {
+  color: #181247;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 23px; }
+
+/* Color del video */
+.video {
+  color: #006400;
+  font-size: 25px;
+  text-align: center; }
+
+/******** Tablas de productos grid *******/
+/* Descripcion de los productos */
+span {
+  color: #040d3d;
+  font-size: 23px;
+  font-weight: bold; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo titulo" "subtitulo1 subtitulo2 subtitulo3 subtitulo4" "concepto1 concepto2 concepto3 concepto4" "img1 img2 img3 img4" "caract1 caract2 caract3 caract4";
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-auto-rows: 0.1fr 0.1fr 0.2fr 0.4fr 0.5fr;
+  grid-row-gap: 4px;
+  /* Separa las filas */
+  grid-column-gap: 15px;
+  /* Separa las columnas */
+  margin-top: 50px;
+  justify-content: center; }
+
+.grid0 {
+  grid-area: titulo;
+  text-align: center; }
+
+.grid1 {
+  grid-area: subtitulo1;
+  text-align: center; }
+
+.grid2 {
+  grid-area: subtitulo2;
+  text-align: center; }
+
+.grid3 {
+  grid-area: subtitulo3;
+  text-align: center; }
+
+.grid4 {
+  grid-area: subtitulo4;
+  text-align: center; }
+
+.grid5 {
+  grid-area: concepto1; }
+
+.grid6 {
+  grid-area: concepto2;
+  text-align: start;
+  justify-content: left; }
+
+.grid7 {
+  grid-area: concepto3; }
+
+.grid8 {
+  grid-area: concepto4; }
+
+.grid9 {
+  grid-area: img1;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+
+.grid10 {
+  grid-area: img2;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+
+.grid11 {
+  grid-area: img3;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+
+.grid12 {
+  grid-area: img4;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+
+.grid13 {
+  grid-area: caract1;
+  justify-items: start;
+  align-items: center;
+  justify-content: start; }
+
+.grid14 {
+  grid-area: caract2;
+  justify-items: start;
+  align-items: center;
+  justify-content: start; }
+
+.grid15 {
+  grid-area: caract3;
+  justify-items: start;
+  align-items: center;
+  justify-content: start; }
+
+.grid16 {
+  grid-area: caract4;
+  justify-items: start;
+  align-items: center;
+  justify-content: start; }
+
+.grid > img {
+  width: 300px;
+  height: 200px;
+  justify-content: center; }
+
+.grid > div {
+  background-image: linear-gradient(#f5cd61, #fff4b3);
+  font-size: 20px; }
+
+/*forma de las imagenes de la tabla */
+.foto1 > img {
+  border-radius: 50%; }
+
+.foto2 > img {
+  border-radius: 50%; }
+
+.foto3 > img {
+  border-radius: 50%; }
+
+.foto4 > img {
+  border-radius: 50%; }
+
+/******imagen de fondo a todas las ventanas *****/
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.gettyimages.com/vectors/multi-coloured-pale-yellowish-sunburst-vector-background-illustration-vector-id1073517044?k=6&m=1073517044&s=612x612&w=0&h=uqyutGlWcEIMWJkPzlfle1ypNXzmAA2OX9qIAJ4LnfU=");
+  background-size: 100vmax;
+  background-repeat: repeat-y; }
+
+/* TITULO CENTRAL */
+#titulo {
+  color: #ffbe0b;
+  font-family: 'Times New Roman';
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* LEMA */
+.especial {
+  color: #ffbe0b; }
+
+/* 2da imagen de la Portada */
+.imagenSegundo {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px; }
+
+/**** TITULOS SECUNDARIOS ****/
+h2 {
+  color: #000a5f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  display: inline;
+  /*es un elemento en bloque que convierte en línea*/
+  /*     background-color: rgb(238, 212, 67);/* da color a la línea*/
+  /*     border: 4px solid rgb(243, 135, 11) ; /* Coloca bordes solidos */ }
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 10px; }

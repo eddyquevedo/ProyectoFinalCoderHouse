@@ -1,0 +1,32 @@
+
+/* Titulo quienes somos */
+.quienes{
+    z-index: 1;
+    width: 500px;
+    padding: 20px 20px;
+    line-height: 1.5 ;
+    border: 1px solid rgb(255, 196, 0); 
+    background-image: url(https://media.gettyimages.com/vectors/old-yellowed-cream-beige-colored-smudged-effect-blotched-wooden-wall-vector-id1074164106?k=6&m=1074164106&s=612x612&w=0&h=q2pgVfFDkuUbJna2KVMhGryrkHEJPPvC51lHvZeBIcU=);
+    text-align: justify;
+    float: left; 
+    margin-bottom: 20px;
+}
+.quienes p{
+    border: 5px dashed rgb(219, 18, 18);
+}
+
+/* Video */
+h3{
+    color: rgb(24, 18, 71);  
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 23px;
+}
+/* Color del video */
+.video{
+    color: #006400;
+    font-size: 25px;
+    text-align: center;
+}
