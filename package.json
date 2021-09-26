@@ -1,7 +1,7 @@
 {
   "name": "trabajo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es el sitio web de mi empresa distribuidora de paneles solares donde encontraras diferente productos como Termotanque Solares,Sistemas Fotovoltaicos,Colectores para climatización de Piscinas,Descalcificador Electrónicos y servicios de instalación para tu hogar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
