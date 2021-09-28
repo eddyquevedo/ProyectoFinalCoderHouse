@@ -18,7 +18,7 @@
 * {
   margin: 0;
   padding: 0;
-  margin-left: 5px;
+/*   margin-left: 5px; */ /* separaba todo el margen mas a la derecha */
   font-family: 'Montserrat', sans-serif;
   font-size: medium; }
 
@@ -116,7 +116,11 @@ span {
 
 .grid {
   display: grid;
-  grid-template-areas: "titulo titulo titulo titulo" "subtitulo1 subtitulo2 subtitulo3 subtitulo4" "concepto1 concepto2 concepto3 concepto4" "img1 img2 img3 img4" "caract1 caract2 caract3 caract4";
+  grid-template-areas: "titulo titulo titulo titulo"
+ "subtitulo1 subtitulo2 subtitulo3 subtitulo4"
+ "concepto1 concepto2 concepto3 concepto4"
+ "img1 img2 img3 img4"
+ "caract1 caract2 caract3 caract4";
   grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
   grid-auto-rows: 0.1fr 0.1fr 0.2fr 0.4fr 0.5fr;
   grid-row-gap: 4px;
@@ -253,11 +257,12 @@ body {
   color: #ffbe0b; }
 
 /* 2da imagen de la Portada */
-.imagenSegundo {
-  text-align: center;
+/* .imagenSegundo {
+  justify-content:space-between;
+  align-items:center;
   margin-bottom: 10px;
   margin-top: 20px; }
-
+ */
 /**** TITULOS SECUNDARIOS ****/
 h2 {
   color: #000a5f;
