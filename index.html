@@ -21,8 +21,43 @@
 </head>
 
 <body>
-<!-- Navegador principal -->
-    <nav id="navegacion">
+<div class="container-fluid">
+  <!-- Navegador principal -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand"> <img src="./Imagenes/logo3.1.png" alt="logo"width="160px" height="80px"></a>
+      <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="MenuNavegacion" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME </a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            PRODUCTOS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./pages/productos.html"> Termotanque Solares</a></li>
+            <li><a class="dropdown-item" href="./pages/productos.html"> Sistemas Fotovoltaicos</a></li>
+            <li><a class="dropdown-item" href="./pages/productos.html"> Climatización de Piscinas</a></li>
+            <li><a class="dropdown-item" href="./pages/productos.html"> Descalcificador Electrónico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">SERVICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/FAQ.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+      </ul>
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="#">Introducccion</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+</div>
+
+
+    <!-- <nav id="navegacion">
         <ul> 
         <li><img src="./Imagenes/logo3.1.png" alt="logo" width="160px" height="75px"></li>
         <li><a class="links" href="index.html"> HOME</a></li>
@@ -33,7 +68,7 @@
         <li><a class="linksDos" href="mailto:info@solarenergy.com.ar" >info@solarenergy.com.ar </a></li>   
         <li><a class="linksDos">+54 11 7361-2091</a></li> 
     </ul>
-    </nav>
+    </nav> -->
 <!-- Titulo central -->
 <h1 align = "center" id="titulo" class="animate__animated animate__backInDown animate__slow 2s ">Solarenergy</h1> 
 <div align = "center" class="animate__animated animate__zoomIn animate__slow 2s">
@@ -71,7 +106,6 @@
     <h2 class="especial">"Nuestra misión es hacer que la energia solar sea facil para todos , donde sea"</h2>
 </div>
 
-<!-- <div class="imagenSegundo">  Segunda imagen de portada-->
   <div class="container">
   <div class="row">
     <div class="col-md-4 col-sm-6"><img src="./Imagenes/img1.png" alt="imagen1" width="430px" height="350px"></div>
