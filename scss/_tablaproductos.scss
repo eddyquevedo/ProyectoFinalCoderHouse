@@ -12,9 +12,7 @@ span{
     grid-template-areas: 
     "titulo titulo titulo titulo"
     "subtitulo1 subtitulo2 subtitulo3 subtitulo4"
-    "concepto1 concepto2 concepto3 concepto4"
     "img1 img2 img3 img4"
-    "caract1 caract2 caract3 caract4"
     ;
 grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
 grid-auto-rows: 0.1fr 0.1fr 0.2fr 0.4fr 0.5fr ;
@@ -43,20 +41,6 @@ justify-content: center;
     grid-area: subtitulo4;
     text-align: center;
 }
-.grid5{
-    grid-area: concepto1;
-}
-.grid6{
-    grid-area: concepto2;
-    text-align: start;
-    justify-content: left;
-}
-.grid7{
-    grid-area: concepto3;
-}
-.grid8{
-    grid-area: concepto4;
-}
 .grid9{
     grid-area: img1;
     flex-wrap: wrap;
@@ -81,30 +65,7 @@ justify-content: center;
     text-align: center;
     justify-content: center;
 }
-.grid13{
-    grid-area: caract1;
-    justify-items: start;
-    align-items: center;
-    justify-content: start;
-}  
-.grid14{
-    grid-area: caract2;
-    justify-items: start;
-    align-items: center;
-    justify-content: start;
-}
-.grid15{
-    grid-area: caract3;
-    justify-items: start;
-    align-items: center;
-    justify-content: start;
-}
-.grid16{
-    grid-area: caract4;
-    justify-items: start;
-    align-items: center;
-    justify-content: start;
-}
+
 .grid>img{
     width: 300px;
     height:200px ;
