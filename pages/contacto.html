@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand"> <img src="../Imagenes/logo3.1.png" alt="logo"width="160px" height="80px"></a>
+      <a href="../index.html" class="navbar-brand"> <img src="../Imagenes/logo3.1.png" alt="logo"width="160px" height="80px"></a>
       <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,14 +49,14 @@
     </div>
   </nav>
     <p>
-        <h2>Contáctese con nosotros ahora mismo</h2>
-        <h4>"Queremos ser la solución que el cliente elija en el momento de una necesidad"</h4>
+        <h2>Contáctese con nosotros</h2>
+        <h3 align="center">"Queremos ser la solución que el cliente elija en el momento de una necesidad"</h3>
     </p>
     
     <!-- Formulario: Recoleccion de datos -->
-    <form class="row g-3">
-      <div class="container">
-        <div class="row g-3">
+    <div class="container">
+    <form class="row g-2">
+        <div class="row g-2">
             <div class="col-md-4">
                 <label for="inputnombre4" class="form-label">Nombres</label>
               <input type="text" class="form-control" placeholder="Introduce nombre" aria-label="Introduce nombre">
@@ -66,7 +66,8 @@
               <input type="text" class="form-control" placeholder="Introduce apellidos" aria-label="Introduce apellidos">
             </div>
           </div>
-        <div class="col-md-4">
+          <div class="row g-2">
+      <div class="col-md-4">
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="Introduce email" aria-label="Introduce email" >
         </div>
@@ -74,6 +75,7 @@
           <label for="inputPassword4" class="form-label">Telefono</label>
           <input type="number" class="form-control" id="inputnumber" placeholder="Introduce telefono" aria-label="Introduce telefono" >
         </div>
+      </div>
         <div class="col-8">
           <label for="inputAddress" class="form-label">Dirección</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="Introduce Dirección">
@@ -91,10 +93,12 @@
             <option>Grandes Obras</option>
           </select>
         </div>
+        <div class="row g-2">
         <div class="col-md-5">
           <label for="mensaje" class="form-label">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
         </div>
+      </div>
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">

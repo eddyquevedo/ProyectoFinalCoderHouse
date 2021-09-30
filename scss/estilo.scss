@@ -1,15 +1,14 @@
 //IMPORTANCION
 @import "responsive";
 @import "reseteo";
-@import "lineasegmentos";
 @import "navegador";
 @import "quienesomos";
 @import "tablaproductos";
 @import "fondopantalla";
 
 //Variables - Operadores
-$fuente: 35px;
-$margen: 20px;
+$fuente: 36px;
+$margen: 40px;
 $azuloscuro: rgb(0, 10, 95);
 $amarillo: #ffbe0b;
 
@@ -19,21 +18,26 @@ $amarillo: #ffbe0b;
     font-family: 'Times New Roman';
     font-size: 2*$fuente;
     font-weight: bold;
-    margin-top: $margen;
-    margin-bottom: $margen;
 }
 
 /* LEMA */
 .especial{
-    color: $amarillo;
-}
+    color:$amarillo;
+    text-align: center;
+    font-weight: bold;
+    font-size:$fuente ;
+    margin-top: $margen;
+    margin-bottom: $margen;
+    }
+
 /**** TITULOS SECUNDARIOS ****/
 h2{
     color: $azuloscuro;
     text-align: center;
     font-weight: bold;
     font-size: $fuente;
-    display: inline;/*es un elemento en bloque que convierte en línea*/
+    padding-top: $margen;
+    /* display: inline;/*es un elemento en bloque que convierte en línea*/
 /*     background-color: rgb(238, 212, 67);/* da color a la línea*/
 /*     border: 4px solid rgb(243, 135, 11) ; /* Coloca bordes solidos */ 
 }
