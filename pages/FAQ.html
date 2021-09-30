@@ -13,7 +13,8 @@
         <!-- Animacion -->
         <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Teko:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
+       <!-- CSS only -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>FAQ-ENERGY</title>
     <style>
         .servicios{
@@ -88,17 +89,35 @@
 </head>
 <body>
 <!--- Navegador principal --->
-<nav>
-    <ul>
-    <li><img src="../Imagenes/logo3.1.png" alt="logo" width="160px" height="75px"></li>
-    <li><a class="links" href="../index.html"> HOME</a></li>
-    <li><a class="links" href="./productos.html">PRODUCTOS</a></li>
-    <li><a class="links" href="./servicios.html">SERVICIOS</a></li> 
-    <li><a class="links" href="FAQ.html ">FAQ</a></li>
-    <li><a class="links" href="./contacto.html">CONTACTO</a></li>
-    <li><h4 class="linksDos">info@solarenergy.com.ar </h4></li>   
-    <li><h4 class="linksDos">+54 11 7361-2091</h4></li> 
-    </ul>
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand"> <img src="../Imagenes/logo3.1.png" alt="logo"width="160px" height="80px"></a>
+      <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="MenuNavegacion" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">HOME </a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            PRODUCTOS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./productos.html"> Termotanque Solares</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Sistemas Fotovoltaicos</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Climatización de Piscinas</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Descalcificador Electrónico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="./FAQ.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+      </ul>
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="mailto:info@solarenergy.com.ar">info@solarenergy.com.ar</a></li>
+        <li class="nav-item"><a class="nav-link">+54 11 7361-2091</a></li>
+      </ul>
+    </div>
+    </div>
 </nav>
     <h1 class="tituloPri">FAQ <br> <span>¿Tienes alguna duda? Aca te la solucionamos</span> </h1>
     <!--- Seccion principal --->
@@ -143,5 +162,7 @@
             <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgwIC0xLjk4MiAtMS44NDQgMCAtMTMyLjUyMiAtNTEuMDc3KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMzcuMTA2IiB4Mj0iLTI2LjU1NSIgeTE9Ii03Mi43MDUiIHkyPSItODQuMDQ3Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1NDNlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzgzN2FiIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMS41IDEuNjMzYy0xLjg4NiAxLjk1OS0xLjUgNC4wNC0xLjUgMTAuMzYyIDAgNS4yNS0uOTE2IDEwLjUxMyAzLjg3OCAxMS43NTIgMS40OTcuMzg1IDE0Ljc2MS4zODUgMTYuMjU2LS4wMDIgMS45OTYtLjUxNSAzLjYyLTIuMTM0IDMuODQyLTQuOTU3LjAzMS0uMzk0LjAzMS0xMy4xODUtLjAwMS0xMy41ODctLjIzNi0zLjAwNy0yLjA4Ny00Ljc0LTQuNTI2LTUuMDkxLS41NTktLjA4MS0uNjcxLS4xMDUtMy41MzktLjExLTEwLjE3My4wMDUtMTIuNDAzLS40NDgtMTQuNDEgMS42MzN6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjxwYXRoIGQ9Im0xMS45OTggMy4xMzljLTMuNjMxIDAtNy4wNzktLjMyMy04LjM5NiAzLjA1Ny0uNTQ0IDEuMzk2LS40NjUgMy4yMDktLjQ2NSA1LjgwNSAwIDIuMjc4LS4wNzMgNC40MTkuNDY1IDUuODA0IDEuMzE0IDMuMzgyIDQuNzkgMy4wNTggOC4zOTQgMy4wNTggMy40NzcgMCA3LjA2Mi4zNjIgOC4zOTUtMy4wNTguNTQ1LTEuNDEuNDY1LTMuMTk2LjQ2NS01LjgwNCAwLTMuNDYyLjE5MS01LjY5Ny0xLjQ4OC03LjM3NS0xLjctMS43LTMuOTk5LTEuNDg3LTcuMzc0LTEuNDg3em0tLjc5NCAxLjU5N2M3LjU3NC0uMDEyIDguNTM4LS44NTQgOC4wMDYgMTAuODQzLS4xODkgNC4xMzctMy4zMzkgMy42ODMtNy4yMTEgMy42ODMtNy4wNiAwLTcuMjYzLS4yMDItNy4yNjMtNy4yNjUgMC03LjE0NS41Ni03LjI1NyA2LjQ2OC03LjI2M3ptNS41MjQgMS40NzFjLS41ODcgMC0xLjA2My40NzYtMS4wNjMgMS4wNjNzLjQ3NiAxLjA2MyAxLjA2MyAxLjA2MyAxLjA2My0uNDc2IDEuMDYzLTEuMDYzLS40NzYtMS4wNjMtMS4wNjMtMS4wNjN6bS00LjczIDEuMjQzYy0yLjUxMyAwLTQuNTUgMi4wMzgtNC41NSA0LjU1MXMyLjAzNyA0LjU1IDQuNTUgNC41NSA0LjU0OS0yLjAzNyA0LjU0OS00LjU1LTIuMDM2LTQuNTUxLTQuNTQ5LTQuNTUxem0wIDEuNTk3YzMuOTA1IDAgMy45MSA1LjkwOCAwIDUuOTA4LTMuOTA0IDAtMy45MS01LjkwOCAwLTUuOTA4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="width="60px" height="30px" /></a>
         </p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

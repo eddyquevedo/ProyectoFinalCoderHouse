@@ -18,18 +18,36 @@
 
 </head>
 <body>
-    <nav>
-        <ul>
-        <li><img src="../Imagenes/logo3.1.png" alt="logo" width="160px" height="75px"></li>
-        <li><a class="links" href="../index.html"> HOME</a></li>
-        <li><a class="links" href="./productos.html">PRODUCTOS</a></li>
-        <li><a class="links" href="./servicios.html">SERVICIOS</a></li> 
-        <li><a class="links" href="./FAQ.html">FAQ</a></li>
-        <li><a class="links" href="./contacto.html">CONTACTO</a></li>
-        <li><h4 class="linksDos">info@solarenergy.com.ar </h4></li>   
-        <li><h4 class="linksDos">+54 11 7361-2091</h4></li> 
-    </ul>
-    </nav>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand"> <img src="../Imagenes/logo3.1.png" alt="logo"width="160px" height="80px"></a>
+      <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="MenuNavegacion" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">HOME </a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            PRODUCTOS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./productos.html"> Termotanque Solares</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Sistemas Fotovoltaicos</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Climatización de Piscinas</a></li>
+            <li><a class="dropdown-item" href="./productos.html"> Descalcificador Electrónico</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="./FAQ.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+      </ul>
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link" href="mailto:info@solarenergy.com.ar">info@solarenergy.com.ar</a></li>
+        <li class="nav-item"><a class="nav-link">+54 11 7361-2091</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
     <p>
         <h2>Contáctese con nosotros ahora mismo</h2>
         <h4>"Queremos ser la solución que el cliente elija en el momento de una necesidad"</h4>
