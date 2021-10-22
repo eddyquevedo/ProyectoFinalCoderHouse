@@ -39,15 +39,15 @@
             justify-content: space-around;
             align-items: center;
         }
-        .b1{
+/*         .b1{
             background-image: linear-gradient(to left,rgb(255, 115, 0),rgb(248, 248, 70));
         }
         .b2{
             background-image: linear-gradient(to right,rgb(255, 115, 0),rgb(247, 247, 80));
-        }
+        } */
 
         /*** Preguntas de los cuadros ***/
-        .boxServ>li{
+/*         .boxServ>li{
             display: flex;
             padding: 12px;
             width: 95%;
@@ -61,8 +61,8 @@
         }
         .boxServ>li:hover{
             height: 250px;
-        }
-        .btnInfoServ {
+        } */
+/*         .btnInfoServ {
             display:flex;
             width:70px;
             height:28px;
@@ -71,7 +71,7 @@
             right:2%;
             justify-content: center ;
             align-items: center;
-        }
+        } */
         /* Titulo Principal */
         .tituloPri{
             background-image: url("https://estaticos.muyinteresante.es/uploads/images/article/5fe094ed5cafe8d9059a45db/1-paneles-solares.jpg");
@@ -85,6 +85,23 @@
             opacity: 0.85;
         }
 
+.accordion-button:not(.collapsed) {
+  color: rgb(2, 15, 131);
+  font-weight: bold;
+  background-color: rgb(248, 227, 159);
+  -webkit-box-shadow: inset 0 -1px 0 #00000021;
+          box-shadow: inset 0 -1px 0 #00000021;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: rgb(204, 76, 1);
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem #fd750d40;
+          box-shadow: 0 0 0 0.25rem #fd750d40;
+}
+.accordion-item{
+    background-image: linear-gradient(to left,rgb(255, 115, 0),rgb(248, 248, 70));
+}
     </style>
 </head>
 <body>
@@ -124,11 +141,11 @@
     <div class="container">
     <main>
         <section class="servicios">
-
-            <div class="servCont">
-                <div class="boxServ b1">
+<!-- 
+            <div class="servCont"> -->
+<!--                 <div class="boxServ b1">
                     <h3> SISTEMAS FOTOVOLTAICOS</h3>
-                    <li>¿CÓMO CALCULO MI CONSUMO Y LOS PANELES QUE NECESITO?</li>
+                    <li>¿CÓMO CALCULO MI CONSUMO Y LOS PANELES QUE NECESITO?<br>
                     <li>¿LOS PANELES GENERAN SIEMPRE ENERGÍA ELÉCTRICA?</li>
                     <li>¿TENGO QUE GENERAR TODA LA ENERGÍA ELÉCTRICA DE MI CASA?</li>
                     <li>¿ENERGÍA FOTOVOLTAICA ES IGUAL A ENERGÍA TÉRMICA?</li>
@@ -136,10 +153,8 @@
                     <li>CUANDO HAY SOL, ¿LOS PANELES SIEMPRE GENERAN?</li>
                     <div class="btnInfoServ"> 
                     <a href="#">INFO</a>
-                    </div>
-                </div>
-
-                <div class="boxServ b2">
+                    </div> -->
+                    <!--                 <div class="boxServ b2">
                     <h3>SISTEMAS TERMICOS</h3>
                     <li>¿POR QUÉ INSTALAR UN TERMOTANQUE SOLAR ENERGY?</li>
                     <li>¿POR QUÉ MUY POCOS LO TIENEN?</li>
@@ -150,8 +165,118 @@
                     <div class="btnInfoServ">
                         <a href="#">INFO</a>
                     </div>
-                </div>
+                </div> -->
+                
+    <div class="container">
+        <h2> SISTEMAS FOTOVOLTAICOS Y SISTEMAS TERMICOS:</h2>
+        <h3 class="container h4">
+            Tome el control y consulte sus dudas con respecto a la instalación de paneles solares y termotanques.
+        </h3>
+        <div class="boxServ">
+            <div class="col-6">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿CÓMO CALCULO MI CONSUMO Y LOS PANELES QUE NECESITO?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El consumo eléctrico es muy simple de obtener y es el que está plasmado en la factura mensual o bimestral que entrega la empresa distribuidora de energía eléctrica. A partir de ahí se comienza el estudio para poder obtener la mejor solución para el cliente. Con esta información nuestro equipo técnico hará los cálculos de rigor para entregar las diferentes alternativas entre las que el cliente puede optar.</div>
+                          </div>
+                    </div>
+                    <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿LOS PANELES GENERAN SIEMPRE ENERGÍA ELÉCTRICA?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">No, los paneles solo generan cuando hay radiación solar ya sea en días despejados totalmente como en días nublados. En este último caso la producción cae debido al filtro natural que producen las nubes. Los paneles solo producen energía eléctrica durante el día.</div>
+                           </div>
+                    </div>
+                    <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ¿TENGO QUE GENERAR TODA LA ENERGÍA ELÉCTRICA QUE MI CASA NECESITA?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">No es necesario. Los sistemas inteligentes actuales permiten la interacción entre la red tradicional, el consumo del lugar donde están instalados los paneles y la red eléctrica tradicional. Estos equipos administran la energía eléctrica de tal manera de entregar siempre, en primera instancia, la energía más económica que es la proveniente de los paneles solares para luego compensar el resto con la red eléctrica tradicional.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                            ¿ENERGÍA FOTOVOLTAICA ES IGUAL A ENERGÍA TÉRMICA?
+                          </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Provienen de la misma fuente de energía, que es el sol, pero son dos energías diferentes. Mientras que la primera se utiliza para producir energía eléctrica y alimentar los artefactos de una vivienda o los equipos de una industria, la segunda puede utilizarse para producir desde simple agua caliente en sistemas básicos hasta producir vapor a gran escala para industrias lo que permite no solo utilizar ese vapor tal cual se produce sino que a partir del mismo se puede generar energía eléctrica tal cual lo hace una central termoeléctrica tradicional que consume combustibles fósiles. En este caso, la producción de vapor a escala industrial a partir de la radiación solar produce electricidad sin emisiones de CO2.</div>
+                    </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                        ¿TODOS LOS EQUIPOS TIENEN BATERÍAS?
+                      </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">No necesariamente, las baterías son un opcional en equipos que están en zonas donde la red eléctrica tradicional está presente. Por qué? Esto se debe a que un sistema con baterías aumenta el costo de inversión y produce una necesidad de mantenimiento de dichas baterías con su consiguiente recambio en un periodo determinado. <br> Los sistemas con baterías generalmente se utilizan donde la red de energía eléctrica convencional no está presente o bien el lugares donde no es una opción quedarse sin energía eléctrica, por ejemplo un shelter de comunicaciones, un centro de cómputos, una terapia intensiva de una clínica, etc.</div>
+                    </div>
+                  </div>
             </div>
+        </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingsix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                            ¿POR QUÉ INSTALAR UN TERMOTANQUE SOLAR ECOENERGY?
+                            </button>
+                        </h2>
+                        <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Los termotanques solares pueden ser aplicados en distintas instalaciones, ya sean domésticas, comerciales o industriales. No sólo es ideal para aquellas zonas donde no hay gas natural, sino que también son óptimas para el ahorro de gas y energía eléctrica.</div>
+                          </div>
+                    </div>
+                    <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingseven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+                                SI ES UN SISTEMA TAN CONVENIENTE, ¿POR QUÉ MUY POCOS LO TIENEN?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El uso disminuido de los termotanques solares se debe a que aún no se ha difundido su uso y eficiencia. En el mundo ya funcionan 150 millones con resultados excelentes. Es un gran recurso para preservar el medio ambiente y ahorrar energía. Muchos países lo utilizan e incluso lo fomentan con créditos para quien lo compra, u obligación de instalación en ciertos barrios o edificios.</div>
+                           </div>
+                    </div>
+                    <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingeight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                                ¿CÓMO ES EL AHORRO DE LOS TERMOTANQUES SOLARES FRENTE A OTROS RECURSOS NATURALES YA IMPLEMENTADOS?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El ahorro es muy importante. Si se utiliza gas envasado o electricidad, la instalación de un sistema de termotanque solar se amortiza en un plazo promedio de 1 año.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingnine">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapsenine">
+                            ¿CUÁL ES LA MEJOR UBICACIÓN PARA UN TERMO TANQUE SOLAR?
+                          </button>
+                        </h2>
+                        <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingnine" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">La ubicación óptima de los termotanques solares es aquella que reciba la mayor radiación solar posible. Las superficies donde se coloquen deben tener una orientación hacia el norte. Es importante que no reciban sombra en ningún momento del año. Además en Argentina debe tener una inclinación de 45 grados del suelo.</div>
+                    </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingten">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseten" aria-expanded="false" aria-controls="flush-collapseten">
+                        ¿QUÉ TIPOS DE TECHO SON MÁS RECOMENDABLES PARA LA INSTALACIÓN DE LOS TERMOTANQUES SOLARES?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseten" class="accordion-collapse collapse" aria-labelledby="flush-headingten" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Los aspectos que se tienen en cuenta son: techos de loza, chapa, con tejas o de madera, entre otros; la inclinación, y la orientación de los mismos.</div>
+                  </div>
+                </div>
+                
+        </div>
     </main>
     <footer align = "center">
         <p><Buenos><a href="comercial@solarenergy.com.ar">comercial@solarenergy.com.ar</a><br>Buenos Aires, Argentina<br>Legal . Privacidad . Cookies <br>
